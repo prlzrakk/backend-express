@@ -1,2 +1,2 @@
-GET http://localhost:3000/users?auth=true
+GET http://localhost:3000/users
 Accept: application/json

@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use((req, res, next) => {
     const aboba = req.query["auth"];
     if (!(aboba === "true")){
-        return res.status(401);
+        return res.status(401).json();
     }
     next();
 });
