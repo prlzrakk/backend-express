@@ -12,4 +12,9 @@ router.get('/', function(req, res, next) {
    }]});
 });
 
+router.post('/', function(req, res, next) {
+    const newUser = req.body;
+    return res.status(201).json(newUser);
+})
+
 module.exports = router;
